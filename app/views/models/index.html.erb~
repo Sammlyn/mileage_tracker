@@ -4,13 +4,11 @@
   <tr>
     <th>Name</th>
     <th></th>
-    <th></th>
   </tr>
 
   <% @models.each do |model| %>
   <tr>
     <td><%= model.name %></td>
-    <td><%= link_to 'Show', model %></td>
     <td><%= link_to 'Edit', edit_model_path(model) %></td>
   </tr>
   <% end %>

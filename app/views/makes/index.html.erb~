@@ -3,15 +3,11 @@
 <table class="table">
   <tr>
     <th>Name</th>
-    <th></th>
-    <th></th>
   </tr>
   
   <% @makes.each do |make| %>
     <tr>
       <td><%= make.name %></td>
-      <td><%= link_to 'Show', make %></td>
-      <td><%= link_to 'Edit', edit_make_path(make) %></td>
     </tr>
   <% end %>
 </table>

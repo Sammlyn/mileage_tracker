@@ -26,7 +26,6 @@ class MakesController < ApplicationController
   end
 
   def update
-    @make = Make.find(params[:id])
     if @make.update_attributes(make_params)
       flash[:success] = "Make updated"
       redirect_to @make

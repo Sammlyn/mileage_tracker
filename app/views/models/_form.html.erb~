@@ -1,6 +1,6 @@
 <!-- create a form that can be used by both the new and edit actions -->
 
-<%= form_for(@model) do |f| %>
+<% # start form here %>
   <% if @model.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@model.errors.count, "error") %> prohibited this model from being saved:</h2>
@@ -13,19 +13,7 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :make_id %>
-    <%= f.collection_select :make_id, @makes, :id, :name, :prompt => 'Please select make' %>
-  </div>
+<!-- fill in the rest of the form here -->
 
-  <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-
-<% end %>
+<% #end the form here  %>
 

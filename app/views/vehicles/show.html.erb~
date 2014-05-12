@@ -23,7 +23,7 @@
 <div>
 
 <%= form_for(@mileage) do |f| %>
-    <%= f.hidden_field :vehicle_id, :value => @vehicle.id %>
+    <%= f.hidden_field :vehicle_id, :value => vehicle.id %>
 
   <div class="field">
     <%= f.label :filled_tank_on %>

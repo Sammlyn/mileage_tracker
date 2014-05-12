@@ -1,2 +1,11 @@
-<h1>Models#show</h1>
-<p>Find me in app/views/models/show.html.erb</p>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Model:</b>
+  <%= @model.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_model_path(@model) %> |
+<%= link_to 'List', models_path %>
+

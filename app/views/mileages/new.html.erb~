@@ -1,7 +1,7 @@
 <h1>New Mileage</h1>
 
 <form action="/mileages" class="new_mileage" id="new_mileage" method="post">
-<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token%>" />
+
   <div class="field">
     <label for="mileage_vehicle_id">Vehicle</label><br />
     

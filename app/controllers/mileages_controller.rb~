@@ -16,7 +16,7 @@ class MileagesController < ApplicationController
     @vehicle = Vehicle.find(params[:mileage][:vehicle_id])
 
     if mileage.save
-      flash[:notice] = 'Mileage entry was successfully created'
+      #flash[:notice] = 'Mileage entry was successfully created'
       redirect_to @vehicle
     else
       redirect_to @vehicle

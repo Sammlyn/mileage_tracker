@@ -16,7 +16,7 @@ class ModelsController < ApplicationController
     @model = Model.new(model_params)
     if @model.save
       flash[:success] = "Model added"
-      redirect_to action: "index"
+      redirect_to @model
     else
       render 'new'
     end
